@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="WebDevelopmentProject.Site3" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+       <style>
+
+      #NavCss{
+                 background-color:#FEFCFA;
+                
+             }
+     body{
+          background-color:#FEFCFA;
+     }
+   
+           </style>
+    <title></title>
+
+     <link rel="stylesheet" href="StyleSheet1" type="text/css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+         
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <nav class="navbar navbar-expand-lg navbar-light"ID="NavCss">
+                <a class="navbar-brand" href="#" style="color: #91A584">
+                    <img src="imgs/logo.jpeg" width="90" height="90" />
+                    VOGUE
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="MainHomePage.aspx" style="color: #91A584">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="insertItem.aspx" style="color: #91A584">Insert items</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="editItem.aspx" style="color: #91A584">Edit items</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="searchItem.aspx" style="color: #91A584">Search page</a>
+                        </li>
+                         <li class="nav-item active">
+                            <a class="nav-link" href="deleteItem.aspx" style="color: #91A584">Delete Item</a>
+                        </li>
+                         <li class="nav-item active">
+                            <a class="nav-link" href="sendMail.aspx" style="color: #91A584">Send Email</a>
+                        </li>
+                         <li class="nav-item active">
+                            <a class="nav-link" href="AdminUploadPhoto.aspx" style="color: #91A584">Upload Photo</a>
+                        </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="insertCustomer.aspx" style="color: #91A584"> Insert Customer</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav">
+                      
+                        <li class="nav-item active">
+                              <a class="nav-link" href="MainHomePage.aspx" style="color: #91A584">LogOut</a>
+                        </li>
+
+                       
+                    </ul>
+                </div>
+
+
+            </nav>
+        </div>
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+
+         <!-- Footer -->
+        <footer style="background-color:#91A584">
+        
+            
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:#FEFCFA; font-weight: bolder; font-size: medium;">&copy By Atheer & Manar. </p>
+                    </div>
+                </div>
+            </div>
+           
+        </footer>
+        <!-- ./Footer -->
+
+        
+    </form>
+</body>
+</html>

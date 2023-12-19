@@ -1,0 +1,24 @@
+﻿body {
+}
+.header1 {
+    background-color: #FEFCFA;
+    align-content: Center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+h2 {
+    color: #91A584;
+    font-size: 30pt;
+    align-content: Center;
+}
+h3 {
+    color: #91A584;
+    font-size: 20pt;
+    align-content: Center;
+}
+p {
+    color: #91A584;
+    font-size: 15pt;
+    align-content: Center;
+}

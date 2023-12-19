@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.Master.cs" Inherits="WebDevelopmentProject.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <style>
+
+      #NavCss{
+                 background-color:#FEFCFA;
+             }
+        
+    </style>
+    <title></title>
+     
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="StyleSheets" runat="server">
+        <link rel="stylesheet" href="StyleSheet1.css">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+    <nav class="navbar navbar-expand-lg navbar-light"ID="NavCss">
+                <a class="navbar-brand" href="#" style="color: #91A584">
+                    <img src="imgs/logo.jpeg" width="90" height="90" style="color: #91A584" />
+                   VOUGE
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="MainHomePage.aspx" style="color: #91A584">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="allItems.aspx" style="color: #91A584">View All items</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="BuyItems.aspx" style="color: #91A584">Buy items</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="CustomerUploadPhoto.aspx" style="color: #91A584">upload photo</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav">
+                      
+                        <li class="nav-item active">
+                              <a class="nav-link" href="MainHomePage.aspx" style="color: #91A584">LogOut</a>
+                        </li>
+
+                       
+                    </ul>
+                </div>
+
+
+            </nav>
+        </div>
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+
+         <!-- Footer -->
+     <footer style="background-color:#91A584">
+        
+            
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:#FEFCFA; font-weight: bolder; font-size: medium;">&copy By Atheer & Manar. </p>
+                    </div>
+                </div>
+            </div>
+           
+        </footer>
+        <!-- ./Footer -->
+
+        </div>
+    </form>
+</body>
+</html>
